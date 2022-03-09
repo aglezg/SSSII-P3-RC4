@@ -12,3 +12,13 @@
 - Autor:
   - Adrián González Galván
   - alu0101321219@ull.edu.es
+
+## Interpretación y ejecución
+- Ejecutar `$ python main.py`.
+- Los parámetros a introducir par la semilla y el texto original son números separados por comas. A continuación se visualiza un ejemplo de ejecución:
+  ```
+  PRÁCTICA 3: CIFRADO RC4
+
+  Semilla de clave:2, 5
+  Texto original:1, 34
+  ```
