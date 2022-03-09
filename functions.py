@@ -49,6 +49,18 @@ def PRGA(S: list, generations: int):
     it+= 1
   return result
 
+# Generación de texto cifrado
+def encode(codedSequence: list, message: list):
+  if (len(codedSequence) < len(message)):
+    return None
+  
+  result: list(int) = []
+  for i in range(len(message)):
+    result.append(codedSequence[i] ^ message[i])
+
+  return result
+
 # Pruebas . . .
 S = KSA([2, 5])
-print(PRGA(S, 2))
+P = PRGA(S, 2)
+print(encode(P, [1, 34]))
