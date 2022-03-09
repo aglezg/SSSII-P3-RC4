@@ -30,5 +30,25 @@ def KSA(key: list):
 
   return S
 
+# Generación de secuencia cifrante (PRGA)
+def PRGA(S: list, generations: int):
+  if (generations < 0 or generations > 256):
+     return None
+  if (len(S) != 256):
+    return None
+  i: int = 0
+  j: int = 0
+  it: int = 0
+  result: list(int) = []
+  while (it < generations):
+    i = mod(i + 1, 256)
+    j = mod(j + S[i], 256)
+    S = swap(S, i, j)
+    t: int = mod(S[i] + S[j], 256)
+    result.append(S[t]) 
+    it+= 1
+  return result
+
+# Pruebas . . .
 S = KSA([2, 5])
-print(S)
+print(PRGA(S, 2))
