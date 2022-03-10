@@ -1,3 +1,14 @@
+# ----------------------------------------------------------------
+# Práctica 3: Cifrado RC4.
+# Asignatura: Seguridad en Sistemas Informáticos
+# Fecha de entrega: 10/03/2022
+# Autor:
+# - Adrián González Galván
+# - alu0101321219@ull.edu.es
+# ----------------------------------------------------------------
+# En este fichero se incluye el desarrollo del menú de la práctica.
+# ----------------------------------------------------------------
+
 from functions import *
 
 # Main
